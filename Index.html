@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple AI Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Assistant</h1>
+        
+        <div class="categories">
+            <button class="category active" data-category="general">General</button>
+            <button class="category" data-category="sports">Sports</button>
+            <button class="category" data-category="tech">Tech</button>
+            <button class="category" data-category="cooking">Cooking</button>
+            <button class="category" data-category="news">News</button>
+        </div>
+        
+        <div class="chat-box" id="chatBox">
+            <div class="message ai">
+                Hello! How can I help you today?
+            </div>
+        </div>
+        
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="Type your message...">
+            <button id="sendBtn">Send</button>
+        </div>
+        
+        <button id="newsBtn">Get Today's News</button>
+    </div>
+
+    <div class="news-modal" id="newsModal">
+        <div class="news-content">
+            <h2>Today's News</h2>
+            <button id="closeNewsBtn">Close</button>
+            <div id="newsList"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
